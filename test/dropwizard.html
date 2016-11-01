@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fancy Dropwizard</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="../dist/dropwizard.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+  </head>
+  <body class="coverage">
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content has-header has-footer">
+      
+      <div class="dropwizard" id="drop">
+        <div class="dropwizard-nav">
+          <a href="#category1" class="dropwizard-item" data-toggle="dropwizard" data-drop="#drop">
+            <span>菜单1</span><i class="chevron-down"></i>
+          </a>
+          <a href="#category2" class="dropwizard-item" data-toggle="dropwizard" data-drop="#drop">
+            <span>菜单2</span><i class="chevron-down"></i>
+          </a>
+        </div>
+        <div id="category1" class="dropwizard-menu" data-drop-menu>
+          <div class="menu">
+            <ul class="menu-list">
+              <li>
+                <a href="javascript: void(0)" data-direct="#sub1-1">category-1</a>
+              </li>
+              <li>
+                <a href="javascript: void(0)" data-direct="#sub1-2">category-1</a>
+              </li>
+              <li>
+                <a href="javascript: void(0)" data-direct="#sub1-3">category-1</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu sub" id="sub1-1">
+            <ul class="menu-list">
+              <li>
+                <a href="javascript: void(0)" data-value="dropwizard">sub1-1-1</a>
+              </li>
+              <li>
+                <a href="javascript: void(0)" data-value="dropwizard">sub1-1-1</a>
+              </li>
+              <li>
+                <a href="javascript: void(0)" data-value="dropwizard">sub1-1-1</a>
+              </li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-1-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-1-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-1-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-1-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-1-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-1-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-1-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-1-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-1-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-1-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-1-1</a></li>
+            </ul>
+          </div>
+          <div class="menu sub" id="sub1-2">
+            <ul class="menu-list">
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-2-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-2-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-2-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-2-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-2-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-2-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-2-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-2-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-2-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-2-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-2-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-2-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-2-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-2-1</a></li>
+            </ul>
+          </div>
+          <div class="menu sub" id="sub1-3">
+            <ul class="menu-list">
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-3-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-3-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-3-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-3-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-3-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-3-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-3-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-3-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-3-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-3-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-3-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-3-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-3-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">sub1-3-1</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="category2" class="dropwizard-menu" data-drop-menu>
+          <div class="menu">
+            <ul class="menu-list">
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-1</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-2</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-3</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-4</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-5</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-6</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-7</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-8</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-9</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-10</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-11</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-12</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-13</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-14</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-15</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-16</a></li>
+              <li><a href="javascript: void(0)" data-value="dropwizard">category2-17</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        In show dull give need so held. One order all scale sense her gay style wrote. Incommode our not one ourselves residence. Shall there whose those stand she end. So unaffected partiality indulgence dispatched to of celebrated remarkably. Unfeeling are had allowance own perceived abilities. 
+
+Sportsman delighted improving dashwoods gay instantly happiness six. Ham now amounted absolute not mistaken way pleasant whatever. At an these still no dried folly stood thing. Rapid it on hours hills it seven years. If polite he active county in spirit an. Mrs ham intention promotion engrossed assurance defective. Confined so graceful building opinions whatever trifling in. Insisted out differed ham man endeavor expenses. At on he total their he songs. Related compact effects is on settled do. 
+
+Post no so what deal evil rent by real in. But her ready least set lived spite solid. September how men saw tolerably two behaviour arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected he me. Engaged its was evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on. 
+
+Are sentiments apartments decisively the especially alteration. Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so intention defective at convinced. Led income months itself and houses you. After nor you leave might share court balls. 
+
+Suppose end get boy warrant general natural. Delightful met sufficient projection ask. Decisively everything principles if preference do impression of. Preserved oh so difficult repulsive on in household. In what do miss time be. Valley as be appear cannot so by. Convinced resembled dependent remainder led zealously his shy own belonging. Always length letter adieus add number moment she. Promise few compass six several old offices removal parties fat. Concluded rapturous it intention perfectly daughters is as. 
+
+Picture removal detract earnest is by. Esteems met joy attempt way clothes yet demesne tedious. Replying an marianne do it an entrance advanced. Two dare say play when hold. Required bringing me material stanhill jointure is as he. Mutual indeed yet her living result matter him bed whence. 
+
+Sussex result matter any end see. It speedily me addition weddings vicinity in pleasure. Happiness commanded an conveying breakfast in. Regard her say warmly elinor. Him these are visit front end for seven walls. Money eat scale now ask law learn. Side its they just any upon see last. He prepared no shutters perceive do greatest. Ye at unpleasant solicitude in companions interested. 
+
+Of resolve to gravity thought my prepare chamber so. Unsatiable entreaties collecting may sympathize nay interested instrument. If continue building numerous of at relation in margaret. Lasted engage roused mother an am at. Other early while if by do to. Missed living excuse as be. Cause heard fat above first shall for. My smiling to he removal weather on anxious. 
+
+Respect forming clothes do in he. Course so piqued no an by appear. Themselves reasonable pianoforte so motionless he as difficulty be. Abode way begin ham there power whole. Do unpleasing indulgence impossible to conviction. Suppose neither evident welcome it at do civilly uncivil. Sing tall much you get nor. 
+
+On am we offices expense thought. Its hence ten smile age means. Seven chief sight far point any. Of so high into easy. Dashwoods eagerness oh extensive as discourse sportsman frankness. Husbands see disposed surprise likewise humoured yet pleasure. Fifteen no inquiry cordial so resolve garrets as. Impression was estimating surrounded solicitude indulgence son shy. 
+      </p>
+
+    </div>
+
+    <script src="./zepto.min.js"></script>
+    <script src="../dist/dropwizard.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#drop').dropwizard()
+
+        $('#drop').on('shown:fancy:dropwizard', function(e) {
+          console.log(e)
+        })
+      })
+    </script>
+  </body>
+</html>

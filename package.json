@@ -1,0 +1,27 @@
+{
+  "name": "dropwizard",
+  "version": "0.0.1",
+  "description": "dropdown selection plugin for Zepto/jQuery",
+  "main": "dropwizard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lutepluto",
+  "license": "MIT",
+  "repository": "https://github.com/lutepluto/dropwizard",
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-umd": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.1.0",
+    "gulp-uglify": "^2.0.0",
+    "zepto": "^1.2.0"
+  }
+}
