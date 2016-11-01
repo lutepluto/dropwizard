@@ -167,13 +167,19 @@ import Util from './util.js'
       // }
 
       let $targetMenu = $target.parents(Selector.DATA_MENU)
-      let preActive = $targetMenu.data('prev-active')
-      if (preActive) {
-        $(`[data-value="${preActive}"]`).parent().removeClass('active')
-      }
+      // let preActive = $targetMenu.data('prev-active')
+      // if (preActive) {
+      //   $(`[data-value="${preActive}"]`).parent().removeClass('active')
+      // }
+      $targetMenu.find('.menu .active').each((idx, el) => {
+        let $el = $(el)
+        if (!$el.children().data('direct')) {
+          $el.removeClass('active')
+        }
+      })
 
       $target.parent().addClass('active')
-      $targetMenu.data('prev-active', $target.data('value'))
+      // $targetMenu.data('prev-active', $target.data('value'))
 
       let $targetWizard = this._getTargetWizard($targetMenu)
       $targetWizard.children('span').text($target.text().trim())
