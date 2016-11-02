@@ -20,6 +20,7 @@ gulp.task('sass', () => {
   .pipe(autoprefixer({
     browsers: ['> 1%', 'iOS >= 7', 'Android >= 4.1']
   }))
+  .pipe(gulp.dest('dist'))
   .pipe(cleanCss())
   .pipe(rename({ suffix: '.min' }))
   .pipe(gulp.dest('dist'))
@@ -32,7 +33,7 @@ gulp.task('script', () => {
     'src/dropwizard.js'
   ])
   .pipe(babel())
-  .pipe(concat('dropwizard.js'))
+  .pipe(gulp.dest('dist'))
   .pipe(uglify())
   .pipe(rename({ suffix: '.min' }))
   .pipe(gulp.dest('dist'))
